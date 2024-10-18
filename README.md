@@ -89,5 +89,32 @@ You can view all registrations by querying the database using the following SQL 
 
 ```
 SELECT * FROM Registration;
-
 ```
+3. Update
+You can update a registration entry using an SQL UPDATE command. For example, to update the name of a user with ID = 1:
+```
+UPDATE Registration
+SET Name = 'Updated Name', Email = 'updated.email@example.com'
+WHERE ID = 1;
+```
+4.Delete
+You can delete a registration entry by ID using the following command:
+```
+DELETE FROM Registration WHERE ID = 1;
+```
+
+# Project Structure
+```
+/flask-registration-form/
+    ├── app.py               # The main Flask app
+    ├── templates/
+    │   └── register.html     # HTML form for registration
+    ├── README.md             # This README file
+```
+1)app.py: Contains the backend code that handles form submission and CRUD operations.
+2)register.html: The frontend registration form written in HTML.
+3)README.md: Instructions on how to set up and run the project
+
+# License
+
+This project is open-source and free to use under the MIT License.
