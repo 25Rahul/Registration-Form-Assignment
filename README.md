@@ -25,18 +25,22 @@ cd flask-registration-form
 Step 2: Install Python Dependencies
 
 Install the required dependencies using pip:
-```pip install flask mysql-connector-python```
+```
+pip install flask mysql-connector-python
+```
 
 Step 3: Set Up MySQL Database
 
 1)Open MySQL and create a database called mydatabase:
 
-```USE mydatabase;```
-```CREATE TABLE Registration (```
+```
+USE mydatabase;
+  CREATE TABLE Registration (```
     ```ID INT AUTO_INCREMENT PRIMARY KEY,```
     ```Name VARCHAR(100) NOT NULL,```
     ```Email VARCHAR(100) NOT NULL UNIQUE,```
     ```DateOfBirth DATE NOT NULL,```
     ```RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP```
-```);```
+```);
+```
 
