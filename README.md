@@ -112,7 +112,9 @@ DELETE FROM Registration WHERE ID = 1;
     ├── README.md             # This README file
 ```
 1)app.py: Contains the backend code that handles form submission and CRUD operations.
+
 2)register.html: The frontend registration form written in HTML.
+
 3)README.md: Instructions on how to set up and run the project
 
 # License
