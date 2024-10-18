@@ -18,5 +18,5 @@ Before running this project, make sure you have the following installed:
 # Installation and Setup
 Step 1: Clone the repository or set up your project directory
 
-'''git clone https://github.com/your-username/flask-registration-form.git
-cd flask-registration-form'''
+```git clone https://github.com/your-username/flask-registration-form.git
+cd flask-registration-form ```
