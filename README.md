@@ -16,16 +16,20 @@ Before running this project, make sure you have the following installed:
 3)MySQL: A relational database management system. You can install MySQL from here
 
 # Installation and Setup
+
 Step 1: Clone the repository or set up your project directory
 
 ```git clone https://github.com/your-username/flask-registration-form.git```
 ```cd flask-registration-form ```
 
 Step 2: Install Python Dependencies
+
 Install the required dependencies using pip:
+
 ```pip install flask mysql-connector-python```
 
 Step 3: Set Up MySQL Database
+
 1)Open MySQL and create a database called mydatabase:
 
 ```USE mydatabase;```
