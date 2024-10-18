@@ -35,12 +35,24 @@ Step 3: Set Up MySQL Database
 
 ```
 USE mydatabase;
-  CREATE TABLE Registration (```
-    ```ID INT AUTO_INCREMENT PRIMARY KEY,```
-    ```Name VARCHAR(100) NOT NULL,```
-    ```Email VARCHAR(100) NOT NULL UNIQUE,```
-    ```DateOfBirth DATE NOT NULL,```
-    ```RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP```
-```);
+    CREATE TABLE Registration(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    DateOfBirth DATE NOT NULL,
+    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 ```
+2)Create a Registration table within the database:
+```
+USE RegistrationDB;
 
+CREATE TABLE Registration (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    DateOfBirth DATE NOT NULL,
+    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+```
