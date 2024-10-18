@@ -34,18 +34,13 @@ Step 3: Set Up MySQL Database
 1)Open MySQL and create a database called mydatabase:
 
 ```
-USE mydatabase;
-    CREATE TABLE Registration(
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) NOT NULL UNIQUE,
-    DateOfBirth DATE NOT NULL,
-    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+CREATE DATABASE mydatabase;
+
 );
 ```
 2)Create a Registration table within the database:
 ```
-USE RegistrationDB;
+USE mydatabase;
 
 CREATE TABLE Registration (
     ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -56,3 +51,30 @@ CREATE TABLE Registration (
 );
 
 ```
+
+# Step 4: Modify Database Connection Details
+
+In the app.py file, update the following lines with your MySQL credentials (replace your_mysql_username and your_mysql_password with your actual MySQL details):
+```
+def get_db_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="your_mysql_username",
+        password="your_mysql_password",
+        database="mydatabase"
+    )
+
+```
+# Step 5: Running the Flask Application
+
+To start the Flask application, navigate to the project directory and run:
+
+```
+python app.py
+
+```
+The application will start running at http://127.0.0.1:5000/.
+
+Open your browser and navigate to this address to view the registration form.
+
+# CRUD Operations in MySQL
