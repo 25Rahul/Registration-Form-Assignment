@@ -11,6 +11,12 @@ CRUD operations to create, read, update, and delete registrations.
 # Prerequisites
 Before running this project, make sure you have the following installed:
 
-Python 3.x: Make sure Python is installed. You can download it from here.
-Flask: A Python web framework, which you can install via pip.
-MySQL: A relational database management system. You can install MySQL from here
+1)Python 3.x: Make sure Python is installed. You can download it from here.
+2)Flask: A Python web framework, which you can install via pip.
+3)MySQL: A relational database management system. You can install MySQL from here
+
+# Installation and Setup
+Step 1: Clone the repository or set up your project directory
+
+git clone https://github.com/your-username/flask-registration-form.git
+cd flask-registration-form
