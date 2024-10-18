@@ -78,3 +78,16 @@ The application will start running at http://127.0.0.1:5000/.
 Open your browser and navigate to this address to view the registration form.
 
 # CRUD Operations in MySQL
+
+You can also perform basic CRUD operations using MySQL. Here’s how you can manage records:
+
+1. Create (Insert)
+When a user fills out the registration form and submits it, their details are inserted into the Registration table automatically.
+
+2. Read (Select)
+You can view all registrations by querying the database using the following SQL command:
+
+```
+SELECT * FROM Registration;
+
+```
